@@ -50,7 +50,7 @@ try{
 
 echo "Encoding dictionary: ";
 try{
-  if(Bencode::encode([ "pear" => "tracker", "banana" => "papaya", "apple" => "google" ]) === "d4:pear:7:tracker6:banana:6:papaya5:apple:6:googlee"){
+  if(Bencode::encode([ "pear" => "tracker", "banana" => "papaya", "apple" => "google" ]) === "d4:pear7:tracker6:banana6:papaya5:apple6:googlee"){
     pass();
   }else{
     fail();
