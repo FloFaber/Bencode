@@ -210,7 +210,7 @@ class Encoder
       foreach ($arr as $key => $value) {
         $k = $this->encode($key);
         $v = $this->encode($value);
-        $x .= $k . ":" . $v;
+        $x .= $k . $v;
       }
       return "d" . $x . "e";
     }
