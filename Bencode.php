@@ -236,7 +236,7 @@ class Bencode
   /**
    * @throws Exception
    */
-  public function decode($data)
+  public static function decode($data)
   {
     return (new Decoder())->decode($data);
   }
@@ -244,7 +244,7 @@ class Bencode
   /**
    * @throws Exception
    */
-  public function encode($data): string
+  public static function encode($data): string
   {
     return (new Encoder())->encode($data);
   }
